@@ -1,10 +1,13 @@
 //vars
-$white: #f6f6f6;
+$accentcolor: #2cc76a;
 
 //misc
 @import "_misc/mixins";
 @import "_misc/normalize";
 @import "_misc/adjustment";
+
+//elements
+@import "elements/elements";
 
 //sections
 @import "elements/header";

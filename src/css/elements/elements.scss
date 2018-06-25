@@ -1,0 +1,15 @@
+.btn{
+  display: block;
+  padding: rem(10px) rem(20px);
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: $accentcolor;
+  transition: all .3s;
+  &:hover{
+    transform: scale(.98);
+  }
+  &:active{
+    transform: scale(.95);
+  }
+}

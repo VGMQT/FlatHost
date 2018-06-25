@@ -1,3 +1,59 @@
 .header{
+  padding: rem(35px) 0;
   background: #363f48;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a{
+    display: block;
+  }
+}
+
+.logo{
+  width: rem(175px);
+  img{
+    @extend %img;
+  }
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  margin-right: rem(50px);
+}
+
+.nav__link{
+  margin-right: rem(30px);
+  font-size: rem(14px);
+  color: #ffffff;
+  transition: all .3s;
+  &:last-child{
+    margin-right: 0;
+  }
+  &:hover{
+    color: $accentcolor;
+  }
+}
+
+.login{
+  display: flex;
+  align-items: center;
+}
+
+.login__log{
+  margin-right: rem(30px);
+  color: #9ba4ae;
+  transition: all .3s;
+  &:hover{
+    color: $accentcolor;
+  }
 }
