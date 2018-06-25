@@ -91,14 +91,15 @@
 
 .nav-btn{
   display: none;
+  width: rem(40px);
+  height: rem(40px);
   @include tablet{
     display: block;
   }
 }
 
 .nav-svg{
-  width: rem(40px);
-  height: rem(40px);
+  @extend %img;
   fill: #FFFFFF;
   transition: all .3s;
   &:hover{
