@@ -1,0 +1,20 @@
+.content{
+  padding-top: rem(50px);
+  .container{
+    display: flex;
+  }
+}
+
+.article{
+  width: 70%;
+}
+
+.article__img{
+  width: 100%;
+  img{
+    @extend %img;
+  }
+}
+
+
+
