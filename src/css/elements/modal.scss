@@ -1,0 +1,34 @@
+.modal{
+  padding: rem(50px);
+}
+
+.form-modal{
+  ::placeholder{
+    font-size: rem(16px);
+    color: #8c8c8c;
+  }
+  .btn{
+    border: none;
+    outline: none;
+    width: 100%;
+  }
+  .input{
+    width: 100%;
+    margin-bottom: rem(10px);
+  }
+}
+
+.modal-proceed{
+  padding: rem(50px);
+}
+
+.form-proceed{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .btn{
+    border: none;
+    outline: none;
+    width: 40%;
+  }
+}

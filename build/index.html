@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=960">
-    
+    <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.min.css">
     <title>FlatHost</title>
 </head>
@@ -26,7 +26,7 @@
                     </nav>
                     <div class="login">
                         <a href="#" class="login__log">Login</a>
-                        <a href="#" class="btn">SignUp</a>
+                        <a href="#" class="btn trigger">SignUp</a>
                     </div>
                 </div>
             </div>
@@ -202,6 +202,23 @@
             </div>
         </main>
     </main>
+</div>
+<div id="modal">
+    <div class="modal">
+        <form action="#" method="get" class="form-modal">
+            <input type="email" placeholder="Email" class="input">
+            <input type="password" placeholder="Password" class="input">
+            <button type="submit" class="btn trigger-proceed">Sign Up</button>
+        </form>
+    </div>
+</div>
+<div id="modal-proceed">
+    <div class="modal-proceed">
+        <form action="#" method="get" class="form-proceed">
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn trigger">Decline</button>
+        </form>
+    </div>
 </div>
 <footer class="footer">
     <div class="container">
