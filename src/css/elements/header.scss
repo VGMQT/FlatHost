@@ -12,9 +12,14 @@
 }
 
 .logo{
+  display: block;
   width: rem(175px);
+  transition: all .3s;
   img{
     @extend %img;
+  }
+  &:hover{
+    transform: rotate(10deg);
   }
 }
 
