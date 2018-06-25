@@ -70,6 +70,9 @@
 
 .input{
   width: rem(315px);
+  @include laptop{
+    width: rem(240px);
+  }
   @include tablet{
     width: rem(250px);
   }
