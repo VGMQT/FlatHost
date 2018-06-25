@@ -32,6 +32,9 @@
     width: 80%;
     flex-wrap: wrap;
   }
+  @include tablet{
+    justify-content: flex-end;
+  }
 }
 
 .nav{
@@ -41,6 +44,9 @@
   @include laptop{
     margin-right: 0;
     margin-bottom: rem(10px);
+  }
+  @include tablet{
+    display: none;
   }
 }
 
@@ -55,11 +61,19 @@
   &:hover{
     color: $accentcolor;
   }
+  @include tablet{
+    margin-right: 0;
+    margin-bottom: rem(20px);
+    font-size: rem(16px);
+  }
 }
 
 .login{
   display: flex;
   align-items: center;
+  @include tablet{
+    margin-right: rem(20px);
+  }
 }
 
 .login__log{
@@ -69,4 +83,34 @@
   &:hover{
     color: $accentcolor;
   }
+}
+
+.dropdown{
+  display: none;
+}
+
+.nav-btn{
+  display: none;
+  @include tablet{
+    display: block;
+  }
+}
+
+.nav-svg{
+  width: rem(40px);
+  height: rem(40px);
+  fill: #FFFFFF;
+  transition: all .3s;
+  &:hover{
+    transform: rotate(-180deg);
+  }
+  &:active{
+    transform: rotate(-360deg);
+  }
+}
+
+.dropdown-nav{
+  margin-top: rem(40px);
+  margin-left: rem(50px);
+  text-align: right;
 }
