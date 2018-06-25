@@ -19,3 +19,18 @@
   font-size: rem(22px);
   color: $titlecolor;
 }
+
+.subtitle{
+  font-size: rem(16px);
+  color: $textcolor;
+}
+
+.desc{
+  color: #656565;
+  p{
+    margin-bottom: rem(30px);
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,8 +1,20 @@
 .content{
-  padding-top: rem(50px);
+  padding: rem(50px) 0;
   .container{
     display: flex;
   }
+}
+
+.title-wrapper{
+  margin-bottom: rem(25px);
+  .title{
+    margin-bottom: rem(5px);
+    font-size: rem(30px);
+  }
+}
+
+.author, .comments-value{
+  color: $accentcolor;
 }
 
 .article{
@@ -11,10 +23,13 @@
 
 .article__img{
   width: 100%;
+  margin-bottom: rem(20px);
   img{
     @extend %img;
   }
 }
+
+
 
 
 
