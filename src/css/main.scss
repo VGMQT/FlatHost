@@ -1,0 +1,12 @@
+//vars
+$white: #f6f6f6;
+
+//misc
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+
+//sections
+@import "elements/header";
+@import "elements/footer";
+
