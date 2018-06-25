@@ -12,6 +12,13 @@
 .contacts{
   display: flex;
   justify-content: space-between;
+  @include laptop{
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__item{
+  margin-right: rem(10px);
 }
 
 .contacts__list{
