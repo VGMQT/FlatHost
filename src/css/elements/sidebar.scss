@@ -12,6 +12,9 @@
       margin-bottom: 0;
     }
   }
+  @include tablet{
+    display: none;
+  }
 }
 
 .categories__item{
