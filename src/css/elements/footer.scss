@@ -19,6 +19,9 @@
 
 .contacts__item{
   margin-right: rem(10px);
+  @include laptop{
+    margin-bottom: rem(20px);
+  }
 }
 
 .contacts__list{

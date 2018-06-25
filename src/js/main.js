@@ -74,4 +74,31 @@ $(document).ready(function () {
         })
     }());
 
+    //----------------------<<categories>>----------------------\\
+    (function () {
+        var flag = true;
+
+        $('.sidebar-btn').on('click', function (e) {
+            e.preventDefault();
+
+            var $this = $(this);
+            var menu = $('.sidebar');
+
+            if (flag) {
+                flag = false;
+                if (!$this.hasClass('active')) {
+                    $this.addClass('active');
+                    menu.slideDown(500, function () {
+                        flag = true;
+                    });
+                } else {
+                    $this.removeClass('active');
+                    menu.slideUp(500, function () {
+                        flag = true;
+                    });
+                }
+            }
+        })
+    }());
+
 });

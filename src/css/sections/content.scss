@@ -1,6 +1,7 @@
 .content{
   padding: rem(50px) 0;
   .container{
+    position: relative;
     display: flex;
   }
 }
@@ -41,6 +42,7 @@
 }
 
 .form{
+  margin-bottom: rem(20px);
   text-align: right;
   ::placeholder{
     font-size: rem(16px);
@@ -68,6 +70,12 @@
 
 .input{
   width: rem(315px);
+  @include tablet{
+    width: rem(250px);
+  }
+  @include mobile{
+    width: rem(190px);
+  }
 }
 
 .textarea{
