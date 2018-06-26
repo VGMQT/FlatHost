@@ -1,5 +1,6 @@
 .sidebar-wrapper{
   width: 30%;
+  margin-left: auto;
   @include tablet{
     position: fixed;
     top: 0;
@@ -23,9 +24,9 @@
 
 .sidebar__categories, .sidebar__widget, .sidebar__archieves{
   min-width: 200px;
-  margin-bottom: rem(35px);
+  padding-bottom: rem(35px);
   &:last-child{
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -33,7 +34,7 @@
   @include font(reg);
   position: relative;
   z-index: 1;
-  margin-bottom: rem(10px);
+  padding: rem(5px) 0;
   &:after{
     position: absolute;
     bottom: 0;
@@ -54,9 +55,6 @@
       color: #ffffff;
     }
   }
-  &:last-child{
-    margin-bottom: 0;
-  }
 }
 
 .categories__link{
@@ -69,17 +67,17 @@
 
 .widget{
   @include font(reg);
-  margin-bottom: rem(20px);
+  padding-bottom: rem(20px);
   color: $textcolor;
   &:last-child{
-    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
 .archieves__item{
   @include font(reg);
   position: relative;
-  margin-bottom: rem(10px);
+  padding: rem(5px) 0;
   &:after{
     position: absolute;
     bottom: 0;
@@ -100,9 +98,6 @@
       color: #ffffff;
     }
   }
-  &:last-child{
-    margin-bottom: 0;
-  }
 }
 
 .archieves__link{
@@ -117,7 +112,7 @@
   display: none;
   position: fixed;
   top: 50%;
-  right: rem(10px);
+  right: rem(20px);
   width: rem(50px);
   height: rem(50px);
   @include tablet{

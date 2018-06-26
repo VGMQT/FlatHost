@@ -17,13 +17,15 @@
 
 .title{
   @include font(bold);
-  margin-bottom: rem(25px);
+  padding-bottom: rem(20px);
+  margin-bottom: 0;
   font-size: rem(22px);
   color: $titlecolor;
 }
 
 .subtitle{
   @include font(reg);
+  margin-bottom: 0;
   font-size: rem(16px);
   color: $textcolor;
 }
@@ -32,9 +34,9 @@
   @include font(reg);
   color: $desccolor;
   p{
-    margin-bottom: rem(30px);
+    padding-bottom: rem(30px);
     &:last-child{
-      margin-bottom: 0;
+      padding-bottom: 0;
     }
   }
 }

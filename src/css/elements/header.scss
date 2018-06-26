@@ -6,12 +6,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablet{
+      align-items: flex-start;
+    }
   }
 }
 
 .logo{
   display: block;
   width: rem(175px);
+  margin-right: auto;
   transition: all .3s;
   &:hover{
     transform: rotate(10deg);
@@ -25,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
   text-transform: uppercase;
   @include laptop{
     flex-wrap: wrap;
@@ -41,7 +46,7 @@
   margin-right: rem(50px);
   @include laptop{
     margin-right: 0;
-    margin-bottom: rem(10px);
+    padding-bottom: rem(10px);
   }
   @include tablet{
     display: none;
@@ -62,7 +67,7 @@
   }
   @include tablet{
     margin-right: 0;
-    margin-bottom: rem(20px);
+    padding-bottom: rem(20px);
     font-size: rem(16px);
   }
 }
@@ -81,6 +86,9 @@
   transition: all .3s;
   &:hover{
     color: $accentcolor;
+  }
+  @include mobile{
+    margin-right: rem(10px);
   }
 }
 
