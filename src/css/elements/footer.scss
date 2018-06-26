@@ -27,11 +27,12 @@
 .contacts__list{
   display: flex;
   flex-direction: column;
-  span{
-    margin-bottom: rem(10px);
-    text-transform: uppercase;
-    color: #68737b;
-  }
+}
+
+.contacts__title{
+  margin-bottom: rem(10px);
+  text-transform: uppercase;
+  color: #68737b;
 }
 
 .contacts__link{
@@ -56,10 +57,10 @@
   display: block;
   width: rem(90px);
   transition: all .3s;
-  img{
-    @extend %img;
-  }
   &:hover{
     transform: rotate(10deg);
+  }
+  img{
+    @extend %img;
   }
 }
