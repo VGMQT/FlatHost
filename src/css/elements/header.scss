@@ -1,4 +1,5 @@
 .header{
+  @include font(sbold);
   padding: rem(35px) 0;
   background: #363f48;
   .container{

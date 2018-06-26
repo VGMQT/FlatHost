@@ -30,12 +30,14 @@
 }
 
 .contacts__title{
+  @include font(reg);
   margin-bottom: rem(10px);
   text-transform: uppercase;
   color: #68737b;
 }
 
 .contacts__link{
+  @include font(medium);
   color: #ffffff;
   transition: all .3s;
   &:hover{
@@ -44,6 +46,7 @@
 }
 
 .copyright{
+  @include font(reg);
   display: flex;
   justify-content: space-between;
   align-items: center;

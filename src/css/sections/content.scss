@@ -42,6 +42,7 @@
 }
 
 .form{
+  @include font(reg);
   display: block;
   margin-bottom: rem(20px);
   text-align: right;
@@ -130,11 +131,13 @@
 }
 
 .comments__name{
+  @include font(rob);
   font-size: rem(20px);
   color: $titlecolor;
 }
 
 .comments__footer{
+  @include font(reg);
   display: flex;
   font-size: rem(14px);
 }

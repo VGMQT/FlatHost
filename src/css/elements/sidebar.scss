@@ -17,6 +17,7 @@
 }
 
 .categories__item{
+  @include font(reg);
   position: relative;
   z-index: 1;
   margin-bottom: rem(10px);
@@ -54,6 +55,7 @@
 }
 
 .widget{
+  @include font(reg);
   margin-bottom: rem(20px);
   color: $textcolor;
   &:last-child{
@@ -62,6 +64,7 @@
 }
 
 .archieves__item{
+  @include font(reg);
   position: relative;
   margin-bottom: rem(10px);
   &:after{

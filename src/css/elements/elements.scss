@@ -1,4 +1,5 @@
 .btn{
+  @include font(sbold);
   display: block;
   padding: rem(10px) rem(20px);
   border-radius: 3px;
@@ -15,17 +16,20 @@
 }
 
 .title{
+  @include font(bold);
   margin-bottom: rem(25px);
   font-size: rem(22px);
   color: $titlecolor;
 }
 
 .subtitle{
+  @include font(reg);
   font-size: rem(16px);
   color: $textcolor;
 }
 
 .desc{
+  @include font(reg);
   color: $desccolor;
   p{
     margin-bottom: rem(30px);

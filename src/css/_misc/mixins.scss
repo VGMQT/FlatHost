@@ -53,10 +53,19 @@
 
 //----------------------<<fonts>>----------------------\\
 @mixin font($style: medium) {
+  @if $style == bold {
+    font-family: 'montserratextrabold';
+  }
   @if $style == medium {
-    font-family: 'fontfamily_medium';
+    font-family: 'montserratmedium';
   }
   @if $style == reg {
-    font-family: 'fontfamily_regular';
+    font-family: 'montserratregular';
+  }
+  @if $style == sbold {
+    font-family: 'montserratsemibold';
+  }
+  @if $style == rob {
+    font-family: 'robotoregular';
   }
 }

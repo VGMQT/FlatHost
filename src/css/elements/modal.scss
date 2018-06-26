@@ -4,6 +4,7 @@
 
 .form-modal{
   ::placeholder{
+    @include font(reg);
     font-size: rem(16px);
     color: #8c8c8c;
   }
