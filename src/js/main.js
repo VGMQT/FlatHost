@@ -3,11 +3,8 @@ $(document).ready(function () {
     //----------------------<<svg for ie>>----------------------\\
     (function () {
         svg4everybody();
-    }());
 
     //----------------------<<modal>>----------------------\\
-    (function () {
-
         $('#modal').iziModal({
             width: '25.5rem',
             radius: 5,
@@ -45,17 +42,16 @@ $(document).ready(function () {
             event.preventDefault();
             $('#modal-login').iziModal('open');
         });
-    }());
 
-    //----------------------<<menu>>----------------------\\
-    (function () {
-        let flag = true;
-
+        //----------------------<<menu>>----------------------\\
         $('.nav-btn').on('click', function (e) {
-            e.preventDefault();
+
+            let flag = true;
 
             const $this = $(this);
             const menu = $('.nav-dropdown');
+
+            e.preventDefault();
 
             if (flag) {
                 flag = false;
@@ -71,21 +67,17 @@ $(document).ready(function () {
                     });
                 }
             }
-        })
-    }());
+        });
 
-    //----------------------<<categories>>----------------------\\
-    (function () {
-        let flag = true;
-
-        const
-            sidebar = $('#sidebar'),
-            duration = 300;
-
+        //----------------------<<categories>>----------------------\\
         $('.sidebar-open').on('click', function (e) {
-            e.preventDefault();
 
-            const $this = $(this);
+            let flag = true;
+
+            const sidebar = $('#sidebar');
+            const duration = 300;
+
+            e.preventDefault();
 
             if(flag){
                 flag = false;
@@ -99,9 +91,13 @@ $(document).ready(function () {
         });
 
         $('.sidebar-close').on('click', function (e) {
-            e.preventDefault();
 
-            const $this = $(this);
+            let flag = true;
+
+            const sidebar = $('#sidebar');
+            const duration = 300;
+
+            e.preventDefault();
 
             if(flag){
                 flag = false;

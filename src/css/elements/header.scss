@@ -2,11 +2,10 @@
   @include font(sbold);
 
   padding: rem(35px) 0;
-  background: #363f48;
+  background: $headerbg;
 
   .container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     @include tablet {
@@ -16,7 +15,6 @@
 }
 
 .logo {
-  display: block;
   width: rem(175px);
   margin-right: auto;
   transition: all .3s;
@@ -31,7 +29,6 @@
 .menu {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-left: auto;
   text-transform: uppercase;
 
@@ -62,7 +59,7 @@
   display: block;
   margin-right: rem(30px);
   font-size: rem(14px);
-  color: #ffffff;
+  color: $basiccolor;
   transition: all .3s;
 
   &:last-child {
@@ -88,7 +85,7 @@
 
 .login__log {
   margin-right: rem(30px);
-  color: #9ba4ae;
+  color: $logincolor;
   transition: all .3s;
   &:hover {
     color: $accentcolor;
@@ -109,7 +106,7 @@
 
 .nav-svg {
   @extend %img;
-  fill: #FFFFFF;
+  fill: $basiccolor;
   transition: all .5s;
   &:hover {
     transform: rotate(-90deg);

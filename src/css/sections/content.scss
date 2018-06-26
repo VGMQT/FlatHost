@@ -63,13 +63,13 @@
   padding: rem(15px);
   outline: none;
   font-size: 16px;
-  border: 1px solid #a9a9a9;
+  border: 1px solid $bordercolor;
   border-radius: 2px;
   color: $desccolor;
   background: none;
   transition: all .3s;
   ::placeholder{
-    color: #8c8c8c;
+    color: $placeholder;
   }
   &:focus{
     border-color: $accentcolor;
@@ -102,9 +102,9 @@
   cursor: pointer;
   font-size: rem(20px);
   border: none;
-  border-top: 2px solid #a0ff98;
+  border-top: 2px solid $submitshadow;
   border-radius: 5px;
-  color: #ffffff;
+  color: $basiccolor;
   background: $accentcolor;
   transition: all .3s;
   &:hover{
@@ -148,7 +148,7 @@
   width: rem(60px);
   height: rem(60px);
   margin-right: rem(20px);
-  background: #d2d5d7;
+  background: $imgreplace;
 }
 
 .comments__text{
@@ -169,7 +169,7 @@
 
 .comments__date{
   margin-right: rem(5px);
-  color: #9d9d9d;
+  color: $datecolor;
 }
 
 .comments__reply{

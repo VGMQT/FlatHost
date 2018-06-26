@@ -1,12 +1,6 @@
-//vars
-$accentcolor: #2cc76a;
-$textcolor: #767676;
-$titlecolor: #22292e;
-$desccolor: #656565;
-$basiccolor: #ffffff;
-
 //misc
 @import "_misc/mixins";
+@import "_misc/variables";
 @import "_misc/normalize";
 @import "_misc/adjustment";
 @import "_misc/fonts";

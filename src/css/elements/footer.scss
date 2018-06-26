@@ -1,7 +1,7 @@
 .footer {
   padding: rem(15px) 0;
   font-size: 16px;
-  background: #262e34;
+  background: $footerbg;
   .container{
     display: flex;
     flex-direction: column;
@@ -43,12 +43,12 @@
   @include font(reg);
   margin-bottom: rem(10px);
   text-transform: uppercase;
-  color: #68737b;
+  color: $footertitle;
 }
 
 .contacts__link{
   @include font(medium);
-  color: #ffffff;
+  color: $basiccolor;
   transition: all .3s;
   &:hover{
     color: $accentcolor;
@@ -64,7 +64,7 @@
 
 .copyright__text{
   margin-right: auto;
-  color: #ffffff;
+  color: $basiccolor;
 }
 
 .copyright__logo{
