@@ -49,13 +49,13 @@ $(document).ready(function () {
 
     //----------------------<<menu>>----------------------\\
     (function () {
-        var flag = true;
+        let flag = true;
 
         $('.nav-btn').on('click', function (e) {
             e.preventDefault();
 
-            var $this = $(this);
-            var menu = $('.dropdown-nav');
+            const $this = $(this);
+            const menu = $('.nav-dropdown');
 
             if (flag) {
                 flag = false;
@@ -76,13 +76,13 @@ $(document).ready(function () {
 
     //----------------------<<categories>>----------------------\\
     (function () {
-        var flag = true;
+        let flag = true;
 
         $('.sidebar-btn').on('click', function (e) {
             e.preventDefault();
 
-            var $this = $(this);
-            var menu = $('.sidebar');
+            const $this = $(this);
+            const menu = $('.sidebar');
 
             if (flag) {
                 flag = false;

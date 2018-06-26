@@ -12,11 +12,11 @@
   display: block;
   width: rem(175px);
   transition: all .3s;
-  img{
-    @extend %img;
-  }
   &:hover{
     transform: rotate(10deg);
+  }
+  img{
+    @extend %img;
   }
 }
 
@@ -26,8 +26,8 @@
   align-items: center;
   text-transform: uppercase;
   @include laptop{
-    width: 80%;
     flex-wrap: wrap;
+    width: 80%;
   }
   @include tablet{
     justify-content: flex-end;
@@ -83,10 +83,6 @@
   }
 }
 
-.dropdown{
-  display: none;
-}
-
 .nav-btn{
   display: none;
   width: rem(40px);
@@ -99,16 +95,13 @@
 .nav-svg{
   @extend %img;
   fill: #FFFFFF;
-  transition: all .3s;
+  transition: all .5s;
   &:hover{
-    transform: rotate(-180deg);
-  }
-  &:active{
-    transform: rotate(-360deg);
+    transform: rotate(-90deg);
   }
 }
 
-.dropdown-nav{
+.nav-dropdown{
   display: none;
   margin-top: rem(40px);
   margin-left: rem(50px);
