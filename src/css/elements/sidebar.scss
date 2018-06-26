@@ -12,7 +12,7 @@
     background-color: $titlecolor;
     transition: .3s;
     .title{
-      color: #FFFFFF;
+      color: $accentcolor;
     }
   }
 }
@@ -24,9 +24,12 @@
   }
 }
 
-.sidebar__categories, .sidebar__widget, .sidebar__archieves{
-  min-width: 200px;
+.sidebar__categories,
+.sidebar__widget,
+.sidebar__archieves{
+  width: 200px;
   padding-bottom: rem(35px);
+  font-size: 18px;
   &:last-child{
     padding-bottom: 0;
   }
@@ -65,6 +68,9 @@
   display: block;
   color: $textcolor;
   transition: all .3s;
+  @include tablet{
+    color: $basiccolor;
+  }
 }
 
 .widget{
@@ -73,6 +79,9 @@
   color: $textcolor;
   &:last-child{
     padding-bottom: 0;
+  }
+  @include tablet{
+    color: $basiccolor;
   }
 }
 
@@ -108,6 +117,9 @@
   display: block;
   color: $textcolor;
   transition: all .3s;
+  @include tablet{
+    color: $basiccolor;
+  }
 }
 
 .sidebar-open{

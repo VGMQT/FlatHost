@@ -3,6 +3,7 @@
   display: block;
   padding: rem(10px) rem(20px);
   border-radius: 3px;
+  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
   background: $accentcolor;
@@ -26,13 +27,14 @@
 .subtitle{
   @include font(reg);
   margin-bottom: 0;
-  font-size: rem(16px);
+  font-size: 16px;
   color: $textcolor;
 }
 
 .desc{
   @include font(reg);
   color: $desccolor;
+  font-size: 18px;
   p{
     padding-bottom: rem(30px);
     &:last-child{

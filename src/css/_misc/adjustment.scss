@@ -38,6 +38,12 @@ body, html {
   height: $footer-height;
   overflow: hidden;
   content: "";
+  @include laptop{
+    height: 350px;
+  }
+  @include tablet{
+    height: 450px;
+  }
 }
 
 .container {
@@ -100,4 +106,12 @@ footer {
   width: 100%;
   height: $footer-height;
   margin-top: -$footer-height;
+  @include laptop{
+    height: 350px;
+    margin-top: -350px;
+  }
+  @include tablet{
+    height: 450px;
+    margin-top: -450px;
+  }
 }

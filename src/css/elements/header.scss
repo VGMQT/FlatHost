@@ -1,116 +1,122 @@
-.header{
+.header {
   @include font(sbold);
+
   padding: rem(35px) 0;
   background: #363f48;
-  .container{
+
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include tablet{
+
+    @include tablet {
       align-items: flex-start;
     }
   }
 }
 
-.logo{
+.logo {
   display: block;
   width: rem(175px);
   margin-right: auto;
   transition: all .3s;
-  &:hover{
+  &:hover {
     transform: rotate(10deg);
   }
-  img{
+  img {
     @extend %img;
   }
 }
 
-.menu{
+.menu {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: auto;
   text-transform: uppercase;
-  @include laptop{
+
+  @include laptop {
     flex-wrap: wrap;
     width: 80%;
   }
-  @include tablet{
+  @include tablet {
     justify-content: flex-end;
   }
 }
 
-.nav{
+.nav {
   display: flex;
   align-items: center;
   margin-right: rem(50px);
-  @include laptop{
+
+  @include laptop {
     margin-right: 0;
     padding-bottom: rem(10px);
   }
-  @include tablet{
+  @include tablet {
     display: none;
   }
 }
 
-.nav__link{
+.nav__link {
   display: block;
   margin-right: rem(30px);
   font-size: rem(14px);
   color: #ffffff;
   transition: all .3s;
-  &:last-child{
+
+  &:last-child {
     margin-right: 0;
   }
-  &:hover{
+  &:hover {
     color: $accentcolor;
   }
-  @include tablet{
+  @include tablet {
     margin-right: 0;
     padding-bottom: rem(20px);
     font-size: rem(16px);
   }
 }
 
-.login{
+.login {
   display: flex;
   align-items: center;
-  @include tablet{
+  @include tablet {
     margin-right: rem(20px);
   }
 }
 
-.login__log{
+.login__log {
   margin-right: rem(30px);
   color: #9ba4ae;
   transition: all .3s;
-  &:hover{
+  &:hover {
     color: $accentcolor;
   }
-  @include mobile{
+  @include mobile {
     margin-right: rem(10px);
   }
 }
 
-.nav-btn{
+.nav-btn {
   display: none;
   width: rem(40px);
   height: rem(40px);
-  @include tablet{
+  @include tablet {
     display: block;
   }
 }
 
-.nav-svg{
+.nav-svg {
   @extend %img;
   fill: #FFFFFF;
   transition: all .5s;
-  &:hover{
+  &:hover {
     transform: rotate(-90deg);
   }
 }
 
-.nav-dropdown{
+.nav-dropdown {
   display: none;
   margin-top: rem(40px);
   margin-left: rem(50px);

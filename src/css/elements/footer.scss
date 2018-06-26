@@ -1,6 +1,6 @@
 .footer {
   padding: rem(15px) 0;
-  font-size: rem(14px);
+  font-size: 16px;
   background: #262e34;
   .container{
     display: flex;
@@ -8,18 +8,20 @@
     justify-content: space-around;
     height: 100%;
   }
+  @include mobile{
+    font-size: 15px;
+  }
 }
 
 .contacts{
   display: flex;
   justify-content: space-between;
-  @include laptop{
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
 }
 
 .contacts__item{
-  min-width: rem(170px);
+  min-width: rem(190px);
+  padding-bottom: rem(20px);
   @include laptop{
     padding-bottom: rem(20px);
   }
@@ -32,6 +34,9 @@
 
 .contacts__roll-item{
   padding-bottom: rem(5px);
+  &:last-child{
+    padding-bottom: 0;
+  }
 }
 
 .contacts__title{
@@ -67,9 +72,11 @@
   width: rem(90px);
   margin-left: auto;
   transition: all .3s;
+
   &:hover{
     transform: rotate(10deg);
   }
+
   img{
     @extend %img;
   }
