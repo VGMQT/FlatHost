@@ -42,6 +42,7 @@
 }
 
 .form{
+  display: block;
   margin-bottom: rem(20px);
   text-align: right;
   ::placeholder{
@@ -60,12 +61,12 @@
 .input, .textarea{
   display: block;
   padding: rem(15px);
-  background: none;
   outline: none;
   font-size: rem(16px);
   border: 1px solid #a9a9a9;
   border-radius: 2px;
   color: $desccolor;
+  background: none;
 }
 
 .input{
@@ -90,9 +91,9 @@
 .submit{
   display: inline-block;
   padding: rem(20px) rem(50px);
+  outline: none;
   font-size: rem(20px);
   border: none;
-  outline: none;
   border-top: 2px solid #a0ff98;
   border-radius: 5px;
   color: #ffffff;
@@ -102,8 +103,8 @@
     transform: scale(.98);
   }
   &:active{
-    transform: scale(.95);
     border-color: $accentcolor;
+    transform: scale(.95);
   }
 }
 
