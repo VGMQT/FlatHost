@@ -78,27 +78,41 @@ $(document).ready(function () {
     (function () {
         let flag = true;
 
-        $('.sidebar-btn').on('click', function (e) {
+        const
+            sidebar = $('#sidebar'),
+            duration = 300;
+
+        $('.sidebar-open').on('click', function (e) {
             e.preventDefault();
 
             const $this = $(this);
-            const menu = $('.sidebar');
 
-            if (flag) {
+            if(flag){
                 flag = false;
-                if (!$this.hasClass('active')) {
-                    $this.addClass('active');
-                    menu.slideDown(500, function () {
-                        flag = true;
-                    });
-                } else {
-                    $this.removeClass('active');
-                    menu.slideUp(500, function () {
-                        flag = true;
-                    });
-                }
+
+                sidebar.animate({
+                    width : 250
+                }, duration, function () {
+                    flag = true;
+                });
             }
-        })
+        });
+
+        $('.sidebar-close').on('click', function (e) {
+            e.preventDefault();
+
+            const $this = $(this);
+
+            if(flag){
+                flag = false;
+
+                sidebar.animate({
+                    width : 0
+                }, duration, function () {
+                    flag = true;
+                });
+            }
+        });
     }());
 
 });

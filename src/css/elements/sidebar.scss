@@ -1,15 +1,28 @@
-.sidebar{
+.sidebar-wrapper{
   width: 30%;
-  padding: 0 rem(20px);
   @include tablet{
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 30px;
-    display: none;
+    right: 0;
+    z-index: 2;
+    width: 0;
+    height: 100%;
+    overflow: auto;
+    padding: rem(30px) 0;
+    background-color: $titlecolor;
+    transition: .3s;
+    .title{
+      color: #FFFFFF;
+    }
   }
 }
 
+.sidebar{
+  padding: 0 rem(20px);
+}
+
 .sidebar__categories, .sidebar__widget, .sidebar__archieves{
+  min-width: 200px;
   margin-bottom: rem(35px);
   &:last-child{
     margin-bottom: 0;
@@ -100,9 +113,35 @@
   transition: all .3s;
 }
 
-.sidebar-btn{
+.sidebar-open{
+  display: none;
   position: fixed;
   top: 50%;
-  right: 0;
-  background: $accentcolor;
+  right: rem(10px);
+  width: rem(50px);
+  height: rem(50px);
+  @include tablet{
+    display: block;
+  }
+}
+
+.sidebar-close{
+  display: none;
+  width: rem(30px);
+  height: rem(30px);
+  margin-bottom: rem(30px);
+  margin-left: auto;
+  @include tablet{
+    display: block;
+  }
+}
+
+.sidebar-open__svg{
+  @extend %img;
+  fill: $titlecolor;
+}
+
+.sidebar-close__svg{
+  @extend %img;
+  fill: #FFFFFF;
 }
