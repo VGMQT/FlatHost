@@ -99,6 +99,7 @@
   display: none;
   width: rem(40px);
   height: rem(40px);
+  transition: all .5s;
   @include tablet {
     display: block;
   }
@@ -107,13 +108,9 @@
 .nav-svg {
   @extend %img;
   fill: $basiccolor;
-  transition: all .5s;
-  &:hover {
-    transform: rotate(-90deg);
-  }
 }
 
-.nav-dropdown {
+.nav-mobile {
   display: none;
   margin-top: rem(40px);
   margin-left: rem(50px);

@@ -28,19 +28,35 @@ $(document).ready(function () {
             focusInput: false
         });
 
-        $(document).on('click', '.trigger', function (event) {
-            event.preventDefault();
-            $('#modal').iziModal('open');
-        });
+        // $(document).on('click', '.trigger', function (event) {
+        //     event.preventDefault();
+        //     $('#modal').iziModal('open');
+        // });
+        //
+        // $(document).on('click', '.trigger-proceed', function (event) {
+        //     event.preventDefault();
+        //     $('#modal-proceed').iziModal('open');
+        // });
+        //
+        // $(document).on('click', '.trigger-login', function (event) {
+        //     event.preventDefault();
+        //     $('#modal-login').iziModal('open');
+        // });
 
-        $(document).on('click', '.trigger-proceed', function (event) {
-            event.preventDefault();
-            $('#modal-proceed').iziModal('open');
-        });
+        $('.trigger').on('click', function (e) {
 
-        $(document).on('click', '.trigger-login', function (event) {
-            event.preventDefault();
-            $('#modal-login').iziModal('open');
+            const $this = $(this);
+
+            e.preventDefault();
+
+            if ($this.data('modal') === "main") {
+                $('#modal').iziModal('open');
+            } else if ($this.data('modal') === "proceed") {
+                $('#modal-proceed').iziModal('open');
+            } else {
+                $('#modal-login').iziModal('open');
+            }
+
         });
 
         //----------------------<<menu>>----------------------\\
@@ -49,7 +65,8 @@ $(document).ready(function () {
             let flag = true;
 
             const $this = $(this);
-            const menu = $('.nav-dropdown');
+            const menu = $('.nav-mobile');
+            const duration = 500;
 
             e.preventDefault();
 
@@ -57,12 +74,21 @@ $(document).ready(function () {
                 flag = false;
                 if (!$this.hasClass('active')) {
                     $this.addClass('active');
-                    menu.slideDown(500, function () {
+                    menu.slideDown(duration);
+
+                    $this.css({
+                        'transform' : 'rotate('+ -90 +'deg)'
+                    }, function () {
                         flag = true;
                     });
+
                 } else {
                     $this.removeClass('active');
-                    menu.slideUp(500, function () {
+                    menu.slideUp(duration);
+
+                    $this.css({
+                        'transform' : 'none'
+                    }, function () {
                         flag = true;
                     });
                 }
