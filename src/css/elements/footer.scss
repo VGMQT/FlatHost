@@ -2,82 +2,90 @@
   padding: rem(15px) 0;
   font-size: 16px;
   background: $footerbg;
-  .container{
+
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
   }
-  @include mobile{
+
+  @include mobile {
     font-size: 15px;
   }
 }
 
-.contacts{
+.contacts {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contacts__item{
+.contacts__item {
   min-width: rem(190px);
   padding-bottom: rem(20px);
-  @include laptop{
+
+  @include laptop {
     padding-bottom: rem(20px);
   }
 }
 
-.contacts__roll{
+.contacts__roll {
   display: flex;
   flex-direction: column;
 }
 
-.contacts__roll-item{
+.contacts__roll-item {
   padding-bottom: rem(5px);
-  &:last-child{
+
+  &:last-child {
     padding-bottom: 0;
   }
 }
 
-.contacts__title{
-  @include font(reg);
+.contacts__title {
   margin-bottom: rem(10px);
   text-transform: uppercase;
   color: $footertitle;
+
+  @include font(reg);
 }
 
-.contacts__link{
-  @include font(medium);
+.contacts__link {
   color: $basiccolor;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     color: $accentcolor;
   }
+
+  @include font(medium);
 }
 
-.copyright{
-  @include font(reg);
+.copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include font(reg);
 }
 
-.copyright__text{
+.copyright__text {
   margin-right: auto;
   color: $basiccolor;
 }
 
-.copyright__logo{
+.copyright__logo {
   display: block;
   width: rem(90px);
   margin-left: auto;
   transition: all .3s;
 
-  &:hover{
+  &:hover {
     transform: rotate(10deg);
   }
 
-  img{
+  img {
     @extend %img;
   }
 }

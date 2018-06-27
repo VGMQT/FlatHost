@@ -1,15 +1,17 @@
-.content{
+.content {
   display: block;
   padding: rem(50px) 0;
-  .container{
+
+  .container {
     position: relative;
     display: flex;
   }
 }
 
-.title-wrapper{
+.title-wrapper {
   padding-bottom: rem(25px);
-  .title{
+
+  .title {
     padding-bottom: rem(5px);
     margin-bottom: 0;
     font-size: rem(30px);
@@ -17,25 +19,28 @@
 }
 
 .author,
-.comments-value{
+.comments-value {
   color: $accentcolor;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     color: $titlecolor;
   }
 }
 
-.article{
+.article {
   width: 70%;
   margin-right: auto;
-  @include tablet{
+
+  @include tablet {
     width: 100%;
   }
 }
 
-.article__content{
+.article__content {
   margin-bottom: rem(90px);
-  img{
+
+  img {
     display: block;
     max-width: 100%;
     padding-bottom: rem(20px);
@@ -43,14 +48,15 @@
   }
 }
 
-.form{
-  @include font(reg);
+.form {
   display: block;
   padding-bottom: rem(40px);
   text-align: right;
+
+  @include font(reg);
 }
 
-.form__inputs{
+.form__inputs {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -58,7 +64,7 @@
 }
 
 .input,
-.textarea{
+.textarea {
   display: block;
   padding: rem(15px);
   outline: none;
@@ -68,34 +74,39 @@
   color: $desccolor;
   background: none;
   transition: all .3s;
-  ::placeholder{
+
+  ::placeholder {
     color: $placeholder;
   }
-  &:focus{
+
+  &:focus {
     border-color: $accentcolor;
   }
 }
 
-.input{
+.input {
   width: rem(315px);
-  @include laptop{
+
+  @include laptop {
     width: rem(240px);
   }
-  @include tablet{
+
+  @include tablet {
     width: rem(250px);
   }
-  @include mobile{
+
+  @include mobile {
     width: rem(190px);
   }
 }
 
-.textarea{
+.textarea {
   width: 100%;
   min-height: rem(120px);
   margin-bottom: rem(15px);
 }
 
-.submit{
+.submit {
   display: inline-block;
   padding: rem(20px) rem(50px);
   outline: none;
@@ -107,79 +118,85 @@
   color: $basiccolor;
   background: $accentcolor;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     transform: scale(.98);
   }
-  &:active{
+
+  &:active {
     border-color: $accentcolor;
     transform: scale(.95);
   }
 }
 
 //comments
-.comments{
-  .title{
+.comments {
+  .title {
     padding-bottom: rem(25px);
     margin-bottom: 0;
   }
 }
 
-.comments__item{
+.comments__item {
   display: flex;
   padding-bottom: rem(35px);
-  &:nth-child(2){
+
+  &:nth-child(2) {
     padding-left: rem(20px);
   }
-  &:nth-child(3){
+
+  &:nth-child(3) {
     padding-left: rem(40px);
   }
-  &:nth-child(4){
+
+  &:nth-child(4) {
     padding-left: rem(60px);
   }
-  &:nth-child(5){
+
+  &:nth-child(5) {
     padding-left: rem(80px);
   }
-  &:last-child{
+
+  &:last-child {
     padding-bottom: 0;
   }
 }
 
-.comments__img{
+.comments__img {
   width: rem(60px);
   height: rem(60px);
   margin-right: rem(20px);
   background: $imgreplace;
 }
 
-.comments__text{
+.comments__text {
   width: 90%;
 }
 
-.comments__name{
-  @include font(rob);
+.comments__name {
   font-size: 20px;
   color: $titlecolor;
+
+  @include font(rob);
 }
 
-.comments__footer{
-  @include font(reg);
+.comments__footer {
   display: flex;
   font-size: 14px;
+
+  @include font(reg);
 }
 
-.comments__date{
+.comments__date {
   margin-right: rem(5px);
   color: $datecolor;
 }
 
-.comments__reply{
+.comments__reply {
   color: $accentcolor;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     color: $titlecolor;
   }
 }
-
-
-
-

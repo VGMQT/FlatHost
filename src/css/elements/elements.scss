@@ -1,5 +1,4 @@
-.btn{
-  @include font(sbold);
+.btn {
   display: block;
   padding: rem(10px) rem(20px);
   border-radius: 3px;
@@ -8,37 +7,44 @@
   color: $basiccolor;
   background: $accentcolor;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     transform: scale(.98);
   }
-  &:active{
+
+  &:active {
     transform: scale(.95);
   }
+
+  @include font(sbold);
 }
 
-.title{
-  @include font(bold);
+.title {
   padding-bottom: rem(20px);
   margin-bottom: 0;
   font-size: rem(22px);
   color: $titlecolor;
+
+  @include font(bold);
 }
 
-.subtitle{
-  @include font(reg);
+.subtitle {
   margin-bottom: 0;
   font-size: 16px;
   color: $textcolor;
+
+  @include font(reg);
 }
 
-.desc{
-  @include font(reg);
+.desc {
   color: $desccolor;
   font-size: 18px;
-  p{
+  p {
     padding-bottom: rem(30px);
-    &:last-child{
+    &:last-child {
       padding-bottom: 0;
     }
   }
+
+  @include font(reg);
 }

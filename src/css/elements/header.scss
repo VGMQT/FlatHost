@@ -1,6 +1,4 @@
 .header {
-  @include font(sbold);
-
   padding: rem(35px) 0;
   background: $headerbg;
 
@@ -12,15 +10,19 @@
       align-items: flex-start;
     }
   }
+
+  @include font(sbold);
 }
 
 .logo {
   width: rem(175px);
   margin-right: auto;
   transition: all .3s;
+
   &:hover {
     transform: rotate(10deg);
   }
+
   img {
     @extend %img;
   }
@@ -36,6 +38,7 @@
     flex-wrap: wrap;
     width: 80%;
   }
+
   @include tablet {
     justify-content: flex-end;
   }
@@ -50,6 +53,7 @@
     margin-right: 0;
     padding-bottom: rem(10px);
   }
+
   @include tablet {
     display: none;
   }
@@ -65,9 +69,11 @@
   &:last-child {
     margin-right: 0;
   }
+
   &:hover {
     color: $accentcolor;
   }
+
   @include tablet {
     margin-right: 0;
     padding-bottom: rem(20px);
@@ -78,6 +84,7 @@
 .login {
   display: flex;
   align-items: center;
+
   @include tablet {
     margin-right: rem(20px);
   }
@@ -87,9 +94,11 @@
   margin-right: rem(30px);
   color: $logincolor;
   transition: all .3s;
+
   &:hover {
     color: $accentcolor;
   }
+
   @include mobile {
     margin-right: rem(10px);
   }
@@ -105,17 +114,18 @@
     display: block;
   }
 
-  &:hover{
-    .nav-svg{
+  &:hover {
+    .nav-svg {
       fill: $accentcolor;
     }
   }
 }
 
 .nav-svg {
-  @extend %img;
   fill: $basiccolor;
   transition: all .3s;
+
+  @extend %img;
 }
 
 .nav-mobile {

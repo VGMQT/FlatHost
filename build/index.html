@@ -44,8 +44,8 @@
                         <a href="#" class="nav__link">Contact</a>
                     </nav>
                     <div class="login">
-                        <a href="#" data-modal="login" class="login__log trigger">Login</a>
-                        <a href="#" data-modal="main" class="btn trigger">SignUp</a>
+                        <a href="#" data-modal-id="#modal-login" class="login__log trigger">Login</a>
+                        <a href="#" data-modal-id="#modal" class="btn trigger">SignUp</a>
                     </div>
                     <a href="#" class="nav-btn">
                         <svg class="nav-svg">
@@ -247,7 +247,7 @@
         <form action="#" method="get" class="form-modal">
             <input type="email" placeholder="Email" class="input">
             <input type="password" placeholder="Password" class="input">
-            <button type="submit" data-modal="proceed" class="btn trigger">Sign Up</button>
+            <button type="submit" data-modal-id="#modal-proceed" class="btn trigger">Sign Up</button>
         </form>
     </div>
 </div>
@@ -255,7 +255,7 @@
     <div class="modal-proceed">
         <form action="#" method="get" class="form-proceed">
             <button type="submit" class="btn">Submit</button>
-            <button type="button" data-modal="main" class="btn trigger">Decline</button>
+            <button type="button" data-modal-id="#modal" class="btn trigger">Decline</button>
         </form>
     </div>
 </div>
