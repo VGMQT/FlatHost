@@ -100,14 +100,22 @@
   width: rem(40px);
   height: rem(40px);
   transition: all .5s;
+
   @include tablet {
     display: block;
+  }
+
+  &:hover{
+    .nav-svg{
+      fill: $accentcolor;
+    }
   }
 }
 
 .nav-svg {
   @extend %img;
   fill: $basiccolor;
+  transition: all .3s;
 }
 
 .nav-mobile {
