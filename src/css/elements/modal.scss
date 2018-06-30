@@ -1,34 +1,38 @@
-.modal{
+.modal {
   padding: rem(50px);
 }
 
-.form-modal{
-  ::placeholder{
-    @include font(reg);
+.form-modal {
+  ::placeholder {
     font-size: rem(16px);
-    color: #8c8c8c;
+    color: $placeholder;
+
+    @include font(reg);
   }
-  .btn{
+
+  .btn {
     width: 100%;
     border: none;
     outline: none;
     cursor: pointer;
   }
-  .input{
+
+  .input {
     width: 100%;
     margin-bottom: rem(10px);
   }
 }
 
-.modal-proceed{
+.modal-proceed {
   padding: rem(50px);
 }
 
-.form-proceed{
+.form-proceed {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  .btn{
+
+  .btn {
     width: 40%;
     border: none;
     outline: none;

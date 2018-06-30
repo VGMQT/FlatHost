@@ -1,7 +1,8 @@
-.sidebar-wrapper{
+.sidebar-wrapper {
   width: 30%;
   margin-left: auto;
-  @include tablet{
+
+  @include tablet {
     position: fixed;
     top: 0;
     right: 0;
@@ -11,33 +12,38 @@
     overflow: auto;
     background-color: $titlecolor;
     transition: .3s;
-    .title{
-      color: #FFFFFF;
+
+    .title {
+      color: $accentcolor;
     }
   }
 }
 
-.sidebar{
+.sidebar {
   padding: 0 rem(20px);
-  @include tablet{
+
+  @include tablet {
     padding: rem(30px) rem(20px);
   }
 }
 
-.sidebar__categories, .sidebar__widget, .sidebar__archieves{
-  min-width: 200px;
+.sidebar__categories,
+.sidebar__widget,
+.sidebar__archieves {
+  width: 200px;
   padding-bottom: rem(35px);
-  &:last-child{
+  font-size: 18px;
+
+  &:last-child {
     padding-bottom: 0;
   }
 }
 
-.categories__item{
-  @include font(reg);
+.categories__item {
   position: relative;
   z-index: 1;
   padding: rem(5px) 0;
-  &:after{
+  &:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -49,38 +55,50 @@
     content: "";
     transition: all .3s;
   }
-  &:hover{
-    &:after{
+  &:hover {
+    &:after {
       height: 100%;
     }
-    .categories__link{
-      color: #ffffff;
+    .categories__link {
+      color: $basiccolor;
     }
   }
+
+  @include font(reg);
 }
 
-.categories__link{
+.categories__link {
   position: relative;
   z-index: 2;
   display: block;
   color: $textcolor;
   transition: all .3s;
+
+  @include tablet {
+    color: $basiccolor;
+  }
 }
 
-.widget{
-  @include font(reg);
+.widget {
   padding-bottom: rem(20px);
   color: $textcolor;
-  &:last-child{
+
+  &:last-child {
     padding-bottom: 0;
+  }
+
+  @include font(reg);
+
+  @include tablet {
+    color: $basiccolor;
   }
 }
 
-.archieves__item{
-  @include font(reg);
+.archieves__item {
   position: relative;
   padding: rem(5px) 0;
-  &:after{
+
+  &:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -92,53 +110,65 @@
     content: "";
     transition: all .3s;
   }
-  &:hover{
-    &:after{
+
+  &:hover {
+    &:after {
       height: 100%;
     }
-    .archieves__link{
-      color: #ffffff;
+
+    .archieves__link {
+      color: $basiccolor;
     }
   }
+
+  @include font(reg);
 }
 
-.archieves__link{
+.archieves__link {
   position: relative;
   z-index: 2;
   display: block;
   color: $textcolor;
   transition: all .3s;
+
+  @include tablet {
+    color: $basiccolor;
+  }
 }
 
-.sidebar-open{
+.sidebar-open {
   display: none;
   position: fixed;
   top: 50%;
   right: rem(20px);
   width: rem(50px);
   height: rem(50px);
-  @include tablet{
+
+  @include tablet {
     display: block;
   }
 }
 
-.sidebar-close{
+.sidebar-close {
   display: none;
   width: rem(30px);
   height: rem(30px);
   margin-bottom: rem(30px);
   margin-left: auto;
-  @include tablet{
+
+  @include tablet {
     display: block;
   }
 }
 
-.sidebar-open__svg{
-  @extend %img;
+.sidebar-open__svg {
   fill: $titlecolor;
+
+  @extend %img;
 }
 
-.sidebar-close__svg{
+.sidebar-close__svg {
+  fill: $basiccolor;
+
   @extend %img;
-  fill: #FFFFFF;
 }

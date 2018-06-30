@@ -1,76 +1,95 @@
 .footer {
   padding: rem(15px) 0;
-  font-size: rem(14px);
-  background: #262e34;
-  .container{
+  font-size: 16px;
+  background: $footerbg;
+
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
   }
-}
 
-.contacts{
-  display: flex;
-  justify-content: space-between;
-  @include laptop{
-    flex-wrap: wrap;
+  @include mobile {
+    font-size: 15px;
   }
 }
 
-.contacts__item{
-  min-width: rem(170px);
-  @include laptop{
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .new-class  & {
+    background-color: #fff;
+  }
+}
+
+.contacts__item {
+  min-width: rem(190px);
+  padding-bottom: rem(20px);
+
+  @include laptop {
     padding-bottom: rem(20px);
   }
 }
 
-.contacts__roll{
+.contacts__roll {
   display: flex;
   flex-direction: column;
 }
 
-.contacts__roll-item{
+.contacts__roll-item {
   padding-bottom: rem(5px);
-}
 
-.contacts__title{
-  @include font(reg);
-  margin-bottom: rem(10px);
-  text-transform: uppercase;
-  color: #68737b;
-}
-
-.contacts__link{
-  @include font(medium);
-  color: #ffffff;
-  transition: all .3s;
-  &:hover{
-    color: $accentcolor;
+  &:last-child {
+    padding-bottom: 0;
   }
 }
 
-.copyright{
+.contacts__title {
+  margin-bottom: rem(10px);
+  text-transform: uppercase;
+  color: $footertitle;
+
   @include font(reg);
+}
+
+.contacts__link {
+  color: $basiccolor;
+  transition: all .3s;
+
+  &:hover {
+    color: $accentcolor;
+  }
+
+  @include font(medium);
+}
+
+.copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include font(reg);
 }
 
-.copyright__text{
+.copyright__text {
   margin-right: auto;
-  color: #ffffff;
+  color: $basiccolor;
 }
 
-.copyright__logo{
+.copyright__logo {
   display: block;
   width: rem(90px);
   margin-left: auto;
   transition: all .3s;
-  &:hover{
+
+  &:hover {
     transform: rotate(10deg);
   }
-  img{
+
+  img {
     @extend %img;
   }
 }
